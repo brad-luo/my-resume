@@ -25,7 +25,7 @@ const LINKS = [
   },
   {
     label: 'LinkedIn',
-    value: data.personal.linkedin.replace('https://www.linkedin.com/', '').replace(/\/$/, ''),
+    value: data.personal.linkedin.replace(/^https?:\/\/(www\.)?linkedin\.com\//, '').replace(/\/$/, ''),
     href: data.personal.linkedin,
     icon: 'in',
     color: 'hover:text-gh-blue hover:border-gh-blue/50',
