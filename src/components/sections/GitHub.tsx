@@ -43,7 +43,7 @@ export function GitHub() {
   }, [])
 
   const recentCommits = events.flatMap(e =>
-    e.payload.commits.slice(0, 1).map(c => ({
+    (e.payload.commits ?? []).slice(0, 1).map(c => ({
       repo: e.repo.name.split('/')[1],
       message: c.message.split('\n')[0].slice(0, 60),
       date: new Date(e.created_at).toLocaleDateString(),

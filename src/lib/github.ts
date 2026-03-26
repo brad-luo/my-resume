@@ -11,7 +11,7 @@ export interface GitHubRepo {
 export interface GitHubPushEvent {
   type: 'PushEvent'
   repo: { name: string }
-  payload: { commits: Array<{ message: string }> }
+  payload: { commits?: Array<{ message: string }> }
   created_at: string
 }
 
