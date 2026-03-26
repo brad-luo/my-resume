@@ -23,7 +23,7 @@ export interface ActivityDay {
 const BASE = 'https://api.github.com'
 
 export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> {
-  const res = await fetch(`${BASE}/users/${username}/repos?per_page=100&sort=updated`)
+  const res = await fetch(`${BASE}/users/${username}/repos?per_page=100&sort=updated`, { cache: 'no-store' })
   if (!res.ok) throw new Error(`GitHub API error: ${res.status}`)
   const repos: GitHubRepo[] = await res.json()
   return repos
@@ -33,7 +33,7 @@ export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> 
 }
 
 export async function fetchGitHubEvents(username: string): Promise<GitHubPushEvent[]> {
-  const res = await fetch(`${BASE}/users/${username}/events/public?per_page=90`)
+  const res = await fetch(`${BASE}/users/${username}/events/public?per_page=90`, { cache: 'no-store' })
   if (!res.ok) throw new Error(`GitHub API error: ${res.status}`)
   const events = await res.json()
   return events.filter((e: { type: string }) => e.type === 'PushEvent') as GitHubPushEvent[]
