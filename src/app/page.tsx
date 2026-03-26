@@ -1,6 +1,7 @@
 import { Sidebar } from '@/components/layout/Sidebar'
 import { Hero } from '@/components/sections/Hero'
 import { Skills } from '@/components/sections/Skills'
+import { Experience } from '@/components/sections/Experience'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main className="flex-1 lg:ml-56">
         <Hero />
         <Skills />
+        <Experience />
       </main>
     </div>
   )
