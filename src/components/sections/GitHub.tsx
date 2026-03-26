@@ -42,7 +42,7 @@ export function GitHub() {
       .finally(() => setLoading(false))
   }, [])
 
-  const recentCommits = events.slice(0, 10).flatMap(e =>
+  const recentCommits = events.flatMap(e =>
     e.payload.commits.slice(0, 1).map(c => ({
       repo: e.repo.name.split('/')[1],
       message: c.message.split('\n')[0].slice(0, 60),
