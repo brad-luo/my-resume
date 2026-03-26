@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, type Variants } from 'framer-motion'
+import { motion, AnimatePresence, type Variants } from 'framer-motion'
 import resumeData from '../../../data/resume.json'
 import type { ResumeData } from '../../../data/types'
 
@@ -18,7 +18,7 @@ const itemVariants: Variants = {
 }
 
 export function Experience() {
-  const [expandedId, setExpandedId] = useState<string | null>('csl')
+  const [expandedId, setExpandedId] = useState<string | null>(data.experience[0]?.id ?? null)
 
   return (
     <section id="experience" className="min-h-screen px-8 py-20">
@@ -71,6 +71,7 @@ export function Experience() {
                   </div>
 
                   {/* Expanded bullets */}
+                  <AnimatePresence>
                   {isExpanded && (
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
@@ -106,6 +107,7 @@ export function Experience() {
                       )}
                     </motion.div>
                   )}
+                  </AnimatePresence>
                 </div>
               </motion.div>
             )
