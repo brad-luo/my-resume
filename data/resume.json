@@ -1,0 +1,191 @@
+{
+  "personal": {
+    "name": "Xiaole (Brad) Luo",
+    "title": "Senior Software Engineer",
+    "titles": [
+      "Senior Software Engineer",
+      "Full-Stack Developer",
+      "GenAI Engineer",
+      "Cloud & AI Specialist"
+    ],
+    "email": "xiaoleluo2@gmail.com",
+    "website": "https://bradluo.com",
+    "linkedin": "https://www.linkedin.com/in/xiaole-brad-luo/",
+    "github": "https://github.com/brad-luo",
+    "githubUsername": "brad-luo",
+    "location": "Melbourne, VIC",
+    "profileSummary": "Senior Software Engineer and Full-Stack Developer with 10+ years of experience building robust, scalable, and cloud-native applications. Holds a Master's in Artificial Intelligence (High Distinction) and brings a strong GenAI edge — integrating LLMs, Agentic AI workflows, and modern ML capabilities directly into production systems."
+  },
+  "skills": {
+    "domains": [
+      { "name": "Full-Stack", "score": 95 },
+      { "name": "GenAI", "score": 90 },
+      { "name": "Cloud/DevOps", "score": 88 },
+      { "name": "ML/AI", "score": 80 },
+      { "name": "Databases", "score": 85 },
+      { "name": "Other", "score": 75 }
+    ],
+    "tags": {
+      "Full-Stack": ["React", "Next.js", "Vue.js/Nuxt.js", "TailwindCSS", "Shadcn UI", "MUI", "FastAPI", "Django", "Flask", "Express", "Node.js", "Python", "JavaScript/TypeScript", "Java"],
+      "GenAI": ["LLMs (GPT-*, Claude-*, Gemini-*)", "Context Engineering", "Spec Engineering", "Harness Engineering", "Claude Code", "Cursor", "MCP", "Agentic Workflows", "Multi Agents", "n8n"],
+      "Cloud/DevOps": ["AWS Lambda", "API Gateway", "DynamoDB", "Cognito", "Amplify", "S3", "EC2", "ECS", "GCP", "Firestore", "Cloud Run", "GKE", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Jenkins", "Nginx"],
+      "ML/AI": ["PyTorch", "TensorFlow", "Keras", "Hugging Face", "Scikit-learn", "XGBoost", "MLflow", "Databricks", "TetraScience", "OpenCV", "Pandas", "Numpy"],
+      "Databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", "Firestore", "OrientDB", "OpenTSDB", "Elasticsearch", "SQLite"],
+      "Other": ["REST", "GraphQL", "gRPC", "SharePoint SPFx", "Power Apps", "Power Automate", "Power BI", "Graph API", "Kibana", "Jira", "Confluence"]
+    }
+  },
+  "experience": [
+    {
+      "id": "csl",
+      "company": "CSL (via ProPharma)",
+      "title": "Application Developer",
+      "period": "Jun 2024 – Present",
+      "location": "Melbourne, VIC",
+      "bullets": [],
+      "subRoles": [
+        {
+          "title": "R&D Enabling Technology Team",
+          "period": "Nov 2025 – Present",
+          "bullets": [
+            "Built data pipelines on the TetraScience Data Platform for R&D laboratory data ingestion and management.",
+            "Integrated Databricks for data engineering and analytics workflows.",
+            "Worked with ELN (Electronic Lab Notebook) and Posit Connect to support scientific computing infrastructure."
+          ]
+        },
+        {
+          "title": "Research Digital Innovation Team",
+          "period": "Jun 2024 – Nov 2025",
+          "bullets": [
+            "Applied LLMs and GenAI to enhance applications and automate repetitive tasks, leveraging Databricks and Power Platform AI models.",
+            "Developed SharePoint Framework (SPFx) web parts using React, integrating advanced visualisations and third-party libraries.",
+            "Built end-to-end business applications with Power Apps and Power Automate, integrating with enterprise tooling.",
+            "Deployed and maintained full-stack applications on Posit Connect, Posit Workbench, and AWS EC2 with Nginx."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monash",
+      "company": "Monash University",
+      "title": "Deep Learning Researcher",
+      "period": "Jul 2022 – Jul 2023",
+      "location": "Melbourne, VIC",
+      "bullets": [
+        "Developed a modified 3D-UNet for automated prostate cancer segmentation from 3D MRI scans (PI-CAI 2022 dataset), achieving an overall score of 0.732 (AUC: 0.833, AP: 0.631).",
+        "Explored deep learning techniques for multiple sclerosis diagnosis using MRI-based segmentation models."
+      ]
+    },
+    {
+      "id": "globalegrow",
+      "company": "Globalegrow E-commerce",
+      "title": "Senior Python Developer",
+      "period": "Mar 2018 – Oct 2019",
+      "location": "Shenzhen, China",
+      "bullets": [
+        "Architected and built the internal Ops Platform from scratch using Django, Vue.js, and OrientDB (graph DB), covering servers, network, CI/CD, monitoring, and work order management.",
+        "Customised the Open-Falcon monitoring platform (Flask full-stack) with multi-channel alerting (WeChat, email, SMS).",
+        "Implemented async task scheduling with Celery and APScheduler; wrote scripts to collect metrics from thousands of servers."
+      ]
+    },
+    {
+      "id": "guangdong",
+      "company": "Guangdong Achieve Information Technology",
+      "title": "Python Developer",
+      "period": "Aug 2017 – Feb 2018",
+      "location": "Shenzhen, China",
+      "bullets": [
+        "Developed all APIs and crawlers for an App Detection System that scraped ~500 app stores, downloaded apps for virus and integrity scanning.",
+        "Maintained and extended a large-scale Safety Audit System (PHP/Smarty/MySQL) auditing all intranet machines."
+      ]
+    },
+    {
+      "id": "deepera",
+      "company": "Deepera Information Technology",
+      "title": "Python Developer",
+      "period": "Mar 2016 – Jul 2017",
+      "location": "Shenzhen, China",
+      "bullets": [
+        "Built and deployed all APIs for a WeChat mini-program locksmith platform (Huaxiawanan), serving client-side, locksmith mobile-side, and city management dashboard (Django, Nginx, MySQL).",
+        "Handled Linux server deployment and contributed to front-end development."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "comics-creator",
+      "name": "Brad's Comics Creator",
+      "period": "Aug 2025 – Present",
+      "description": "An AI-powered web app that brings comic ideas to life. Users input a creative prompt, optionally upload reference characters and styles, and choose how many panels to generate. The app produces a plot, then iteratively creates each panel to ensure narrative consistency.",
+      "techStack": ["Next.js", "TailwindCSS", "Shadcn UI", "Google Gemini 2.5 Flash", "GCP", "Firebase", "Firestore"],
+      "tags": ["GenAI", "Next.js", "GCP"],
+      "githubUrl": null,
+      "demoUrl": null
+    },
+    {
+      "id": "image-style",
+      "name": "Image Style Generators",
+      "period": "Aug 2025 – Present",
+      "description": "A web platform for AI-powered image style transformation. Users upload an image, describe the transformation, select artistic styles, and get results in under a minute presented in an interactive gallery.",
+      "techStack": ["Next.js", "TailwindCSS", "Shadcn UI", "Google Gemini 2.5 Flash", "GCP", "Firebase", "Firestore"],
+      "tags": ["GenAI", "Next.js", "GCP"],
+      "githubUrl": null,
+      "demoUrl": null
+    },
+    {
+      "id": "devops-stack",
+      "name": "Self-hosted DevOps Stack on GKE",
+      "period": "Ongoing",
+      "description": "A suite of production-grade self-hosted tools on Google Kubernetes Engine: n8n for AI/workflow automation, Jenkins for CI/CD, Grafana for monitoring, and Kubernetes Dashboard for cluster management.",
+      "techStack": ["Kubernetes", "GKE", "GCP", "n8n", "Jenkins", "Grafana", "Helm"],
+      "tags": ["Cloud/DevOps", "Kubernetes", "GCP"],
+      "githubUrl": null,
+      "demoUrl": null
+    },
+    {
+      "id": "openpromo",
+      "name": "OpenPromo",
+      "period": "Dec 2023 – Mar 2024",
+      "description": "A cloud-native promotional products platform with a fully decoupled microservices architecture on AWS. Serverless APIs via Lambda + API Gateway, GraphQL via AppSync, multi-AZ deployment.",
+      "techStack": ["Nuxt.js", "AWS Amplify", "Lambda", "API Gateway", "AppSync", "DynamoDB", "Cognito", "OpenSearch"],
+      "tags": ["Full-Stack", "AWS", "Serverless"],
+      "githubUrl": null,
+      "demoUrl": null
+    },
+    {
+      "id": "prostate-cancer",
+      "name": "Prostate Cancer Segmentation",
+      "period": "Jul 2022 – Jul 2023",
+      "description": "A deep learning solution for automatic prostate cancer segmentation from 3D MRI scans. Modified 3D-UNet encoder-decoder trained on PI-CAI 2022 dataset. Achieved overall score 0.732 (AUC: 0.833, AP: 0.631).",
+      "techStack": ["PyTorch", "3D-UNet", "Python", "Numpy", "OpenCV"],
+      "tags": ["ML/AI", "Deep Learning", "Research"],
+      "githubUrl": null,
+      "demoUrl": null
+    },
+    {
+      "id": "ops-platform",
+      "name": "Ops Platform",
+      "period": "Mar 2018 – Oct 2019",
+      "description": "A comprehensive automated Operations platform built from scratch, covering the full IT operations lifecycle — servers, network, CI/CD, monitoring, work orders, and script execution.",
+      "techStack": ["Django", "Vue.js", "OrientDB", "Celery", "APScheduler", "Docker"],
+      "tags": ["Full-Stack", "DevOps", "Python"],
+      "githubUrl": null,
+      "demoUrl": null
+    }
+  ],
+  "education": [
+    {
+      "id": "monash-masters",
+      "institution": "Monash University",
+      "degree": "Master of Artificial Intelligence",
+      "period": "Oct 2021 – Sep 2023",
+      "grade": "High Distinction (HD)"
+    },
+    {
+      "id": "foshan-bachelors",
+      "institution": "Foshan University",
+      "degree": "Bachelor of Electrical Engineering & Automation",
+      "period": "Sep 2012 – Jun 2016",
+      "grade": "High Distinction (HD)"
+    }
+  ]
+}
