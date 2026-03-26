@@ -37,8 +37,8 @@ export function MobileNav() {
         <SheetTrigger render={<button className="text-gh-muted hover:text-gh-text font-mono text-lg p-1" />}>
           ☰
         </SheetTrigger>
-        <SheetContent side="left" className="bg-gh-surface border-gh-border w-56 pt-8">
-          <div className="flex flex-col gap-1 mt-4">
+        <SheetContent side="left" className="bg-gh-surface border-gh-border w-56 pt-8 flex flex-col">
+          <div className="flex flex-col gap-1 mt-4 flex-1">
             {NAV_ITEMS.map(item => (
               <button
                 key={item.id}
@@ -49,7 +49,7 @@ export function MobileNav() {
               </button>
             ))}
           </div>
-          <div className="absolute bottom-6 left-4 flex gap-4 font-mono text-xs">
+          <div className="pb-6 px-4 flex gap-4 font-mono text-xs">
             <a href={data.personal.github} target="_blank" rel="noopener noreferrer" className="text-gh-muted hover:text-gh-blue">GH</a>
             <a href={data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-gh-muted hover:text-gh-blue">LI</a>
             <a href={`mailto:${data.personal.email}`} className="text-gh-muted hover:text-gh-blue">✉</a>
