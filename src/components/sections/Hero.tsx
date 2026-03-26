@@ -57,11 +57,11 @@ export function Hero() {
         <a href={`mailto:${data.personal.email}`} className="flex items-center gap-2 text-gh-green hover:text-gh-blue transition-colors">
           <span>✉</span> {data.personal.email}
         </a>
-        <a href={data.personal.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gh-muted hover:text-gh-blue transition-colors">
-          <span>⬡</span> github.com/brad-luo
+        <a href={data.personal.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gh-muted hover:text-gh-blue transition-colors" aria-label="GitHub profile">
+          <span>⬡</span> github.com/{data.personal.githubUsername}
         </a>
-        <a href={data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gh-muted hover:text-gh-blue transition-colors">
-          <span>in</span> linkedin
+        <a href={data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gh-muted hover:text-gh-blue transition-colors" aria-label="LinkedIn profile">
+          <span>in</span> {data.personal.linkedin.replace('https://www.linkedin.com/in/', '').replace('/', '')}
         </a>
       </div>
 
