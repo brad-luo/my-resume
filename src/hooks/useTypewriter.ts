@@ -10,7 +10,7 @@ export function useTypewriter(
   const [stringIndex, setStringIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>()
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined)
 
   useEffect(() => {
     const current = strings[stringIndex]
