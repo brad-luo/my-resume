@@ -26,7 +26,7 @@ export function Skills() {
   const allDomains = Object.keys(data.skills.tags)
   const visibleTags = activeFilter
     ? data.skills.tags[activeFilter] ?? []
-    : allDomains.flatMap(d => data.skills.tags[d])
+    : Array.from(new Set(allDomains.flatMap(d => data.skills.tags[d] ?? [])))
 
   const radarData = data.skills.domains.map(d => ({
     domain: d.name,
@@ -91,7 +91,7 @@ export function Skills() {
               <button
                 key={domain}
                 onClick={() => setActiveFilter(activeFilter === domain ? null : domain)}
-                style={activeFilter === domain ? { borderColor: DOMAIN_COLORS[domain], color: DOMAIN_COLORS[domain], background: `${DOMAIN_COLORS[domain]}18` } : {}}
+                style={activeFilter === domain ? { borderColor: DOMAIN_COLORS[domain] ?? '#8b949e', color: DOMAIN_COLORS[domain] ?? '#8b949e', background: `${DOMAIN_COLORS[domain] ?? '#8b949e'}18` } : {}}
                 className={`px-3 py-1 text-xs font-mono rounded border transition-colors ${
                   activeFilter === domain
                     ? ''
